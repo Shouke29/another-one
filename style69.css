@@ -1,3 +1,4 @@
+/* Body Styles */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -20,6 +21,7 @@ a {
   color: inherit;
 }
 
+/* Navbar Styles */
 .navbar {
   background-color: #90AACB;
   padding: 15px 40px;
@@ -34,7 +36,6 @@ a {
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-
 
 .topnav {
   display: flex;
@@ -57,37 +58,14 @@ a {
   color: #ffffff;
 }
 
-/* Right Alignment for Last Item */
 .topnav .right {
   margin-left: auto;
 }
 
-
-
-@keyframes gradientChange {
-  0% {
-    background: linear-gradient(to bottom, #FFEDD5, #FFF7E6);
-  }
-  25% {
-    background: linear-gradient(to bottom, #FFF7E6, #FDE2E4);
-  }
-  50% {
-    background: linear-gradient(to bottom, #FDE2E4, #CDEDF6);
-  }
-  75% {
-    background: linear-gradient(to bottom, #CDEDF6, #FFEDD5);
-  }
-  100% {
-    background: linear-gradient(to bottom, #FFEDD5, #FFF7E6);
-  }
-}
-
-
-/* Centering the About Section */
+/* About Section */
 .about-text-section {
   text-align: center;
   padding: 40px 20px;
-  
 }
 
 .about-text-section h2 {
@@ -106,8 +84,7 @@ a {
   color: #555;
 }
 
-
-/* About Section */
+/* About Cards */
 .about-section {
   display: flex;
   justify-content: center;
@@ -149,62 +126,10 @@ a {
   background-color: #45a049;
 }
 
-/* Adding border to the about-card sections */
-.about-card {
-  border: 2px solid #4CAF50; /* Green border around the cards */
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px; /* Rounded corners */
-  background-color: #f9f9f9; /* Light background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+/* Gallery Section */
+.gallery-section {
+  padding: 40px 20px;
 }
-
-.about-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-}
-
-/* Border for the gallery items */
-.gallery-item {
-  border: 2px solid #4CAF50; /* Green border around gallery items */
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05); /* Slight scale on hover */
-}
-
-/* Styling for the "Our Mission", "Our Team", and "Our Vision" sections */
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.about-section .about-card {
-  flex: 1;
-  margin: 15px;
-  max-width: 30%;
-}
-
-.gallery img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #4CAF50; /* Green border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.1);
-  border-color: #333; /* Darker border on hover */
-}
-
 
 .gallery {
   display: grid;
@@ -215,8 +140,29 @@ a {
 
 .gallery-item {
   text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
 }
 
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
 
 .gallery p {
   margin-top: 10px;
@@ -224,10 +170,6 @@ a {
   font-size: 0.9em;
   color: #555;
 }
-
-
-
-
 
 /* Footer Section */
 .footer {
@@ -246,7 +188,6 @@ a {
   width: 100%;
 }
 
-/* Footer Logo Section */
 .footer-logo {
   text-align: center;
   flex: 1 1 250px; 
@@ -290,7 +231,6 @@ a {
   margin-bottom: 10px;
 }
 
-/* Social Icons */
 .social-icons {
   margin-top: 15px;
 }
@@ -389,6 +329,7 @@ a {
   transform: translateY(0);
 }
 
+/* Mobile Adjustments */
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
@@ -417,7 +358,6 @@ a {
   }
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -438,7 +378,6 @@ a {
   }
 }
 
-/* Mobile Adjustments */
 @media (max-width: 900px) {
   .hamburger {
     display: flex;
