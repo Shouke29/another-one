@@ -224,15 +224,6 @@ a {
 }
 
 
-/* Background image for the gallery */
-.gallery-section {
-  background-image: url('homebg.jpg'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the whole area */
-  background-position: center; /* Centers the background image */
-  padding: 40px 0; /* Adds padding around the gallery */
-  color: white; /* Ensures text stands out on the background */
-}
-
 /* Styling the gallery itself */
 .gallery {
   display: grid;
@@ -242,13 +233,18 @@ a {
   margin-top: 20px;
 }
 
+/* Styling each gallery item */
 .gallery-item {
   text-align: center;
   border: 2px solid #4CAF50; /* Green border around gallery items */
   border-radius: 8px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.7); /* Light background for the items */
+  background-image: url('homebg.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the gallery item */
+  background-position: center; /* Centers the background image */
   transition: transform 0.3s ease;
+  color: white; /* Ensures text stands out on the background */
 }
 
 .gallery-item:hover {
@@ -274,7 +270,7 @@ a {
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9em;
-  color: #555;
+  color: #fff; /* Adjust text color for better contrast */
 }
 
 
